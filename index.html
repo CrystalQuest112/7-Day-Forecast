@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,40 +28,56 @@
 
       <div class="content d-flex align-items-center">
         <div class="container text-center">
-          <div class="content-box">
-            <div class="box">
-          <h1 class="icon">🌤
-              </h1>
-              <h4 id="degrees"></h4> &nbsp; &nbsp;
-                <span class="units"><a href="#" id="clink">°C </a>&nbsp;|
-                  <a href="#" id="flink"><b>°F</b></a></span>
-              <ul>
-              <div id="element"><b>SUNNY</b></div> <br>
-              <div id="humid">n</div>
-              </ul>
+
+      <div class="card text-white bg-dark mb-3" style="width: 70%;">
+  <div class="card-body"> 
+     <h2 class="location" id="city"></h2>
+    <h3 class="time"> Sunday 0:00</h3>
+     <h4 id="degrees"></h4> &nbsp; &nbsp;
+                <span class="units"><a href="#" id="clink">°C </a>|
+                  <a href="#" id="flink">°F</a></span>
+              
+                  <ul>
+              <span id="element"><b>SUNNY</b></span> <br>
+              <span id="humid">humid</span>
+              </ul>  
               <br /><br />
-              <h2 class="location" id="city"></h2>
-              <h3 class="time"> Sunday 0:00</h3>
+            
               <br />
               <form id="searchbox">
                 <input type="search" placeholder="Search city..." id="locate-city"/>
                 <input type ="submit" value="search" class="btn">
               </form> 
+  </div>
+   </div>
+<br>
+    <div class="card text-white bg-dark mb-3" style="width: 70%;">
+  <div class="card-body"> 
+    
+              <br /><br />
+            
+              
+             
+  </div>
+   </div>
+
+          <div class="content-boxx">
+            <div class="boxx">
+         
+             
+              
               <br><br><br>
+
               <p> 🍃 Existence. 🕊 Consciousness. 🍃 Bliss.</p>
+              
             </div>
           </div>
           <div>
-           <small> <a
-              href="https://github.com/CrystalQuest112/Quiet-Storm"
-              target="_blank"
-              >Open-source code,</a
-            >
-            by Rachel.
-          </div>
-        
-  
 
-    <script src="src/app.js"></script>
+          </div></div>
+
+        
+
+    <script src="app.js"></script>
   </body>
 </html>

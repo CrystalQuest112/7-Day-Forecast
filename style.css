@@ -1,5 +1,6 @@
 body {
-    background: url("") 0% 0% / cover;
+    background: url("");
+    background-size: cover;
     max-width: 100%;
 }
 
@@ -9,6 +10,8 @@ body {
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
+
+
 }
 
 #bkg video {
@@ -20,14 +23,28 @@ body {
     display: block;
 }
 
+
+.card {
+    border-radius: none;
+    opacity: .5;
+    height: 750px;
+    padding: 40px;
+
+}
+
+
+
+.card-body {}
+
 .content-box {
     display: block;
     position: relative;
     box-sizing: border-box;
     background-color: rgb(20, 20, 20);
-    color: rgb(255, 255, 255);
-    opacity: 0.6;
-    width: 800px;
+    color: #fff;
+    opacity: .6;
+    border: solidpx;
+    width: 1000px;
     height: 650px;
     padding: 40px;
     border-radius: 20px;
@@ -43,93 +60,125 @@ body {
     width: 100%;
     z-index: 20;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding: 10%;
     max-width: 100%;
 }
 
+
 .content-box h1 {
-    color: rgb(175, 196, 172);
+    color: rgb(244, 217, 15);
     font-size: 100px;
     position: absolute;
     text-align: center;
     top: 23%;
     padding-left: 39%;
+
 }
 
-.content-box h2 {
-    color: rgb(156, 83, 9);
-    font-size: 60px;
+
+.card h2 {
+    color: rgb(244,
+            217,
+            15);
+    font-size: 75px;
     position: absolute;
-    top: 63%;
+    top: 65%;
     width: 100%;
     text-align: center;
-    padding-right: 10%;
+    padding-right: 0%;
     display: block;
+    left: 2%;
+    padding: 40px;
+
+
 }
 
-.content-box h4 {
+.card h3 {
     position: absolute;
-    top: 44%;
-    width: 100%;
-    color: rgb(255, 183, 0);
-    text-align: left;
-    margin-left: 20%;
-    font-size: 90px;
-    display: block;
+    top: 12px;
+
+    font-size: 10px;
+    margin-left: 75%;
+    color: rgb(244,
+            217,
+            15);
 }
 
-.content-box .units {
-    position: absolute;
+.card h4 {
+    position: relative;
+    top: 15%;
+    color: rgb(255, 0, 183);
+    text-align: center;
+    font-size: 175px;
+    display: block;
+    margin-left: 5%;
+}
+
+.card .units {
     font-size: 16px;
-    top: 47%;
-    padding: 0px;
-    margin-left: -13%;
     text-decoration: none;
-    color: rgb(255, 183, 0);
-    max-width: fit-content;
+    color: rgb(255,
+            0,
+            183);
+    position: absolute;
+    top: 20%;
+    left: 65%;
+
 }
 
-.content-box #clink {
-    color: rgb(255, 183, 0);
+.card #clink {
+    color: rgb(255, 0, 183);
     text-decoration: none;
+
 }
 
-.content-box #flink {
-    color: rgb(255, 183, 0);
+.card #flink {
+    color: rgb(255, 0, 183);
     text-decoration: none;
+
 }
 
-.content-box ul {
+.card ul {
     list-style: none;
     position: absolute;
-    top: 48%;
+    top: 60%;
     width: 100%;
-    color: rgb(255, 183, 0);
-    line-height: 15px;
-    font-size: 20px;
-    text-align: right;
-    padding-right: 30%;
+    color: rgb(253, 118, 215);
+    line-height: px;
+    font-size: 18px;
+    text-align: center;
+    left: 1%;
+    padding: 3px;
+
     display: block;
 }
 
-.content-box h3 {
-    position: absolute;
-    top: 35px;
-    text-align: center;
-    font-size: 20px;
-    margin-left: 32%;
-    color: rgb(156, 83, 9);
-}
+
 
 form {
     position: absolute;
-    bottom: 15%;
+    top: 10px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding-right: 10%;
+    margin-left: -7%;
     border-radius: 20px;
+
+
+}
+
+form .btn {
+    background-color: none;
+    border-color: rgb(244,
+            217,
+            15);
+    color: rgb(244,
+            217,
+            15);
+    border-radius: 10px;
+    padding: 3px;
 }
 
 p {
@@ -139,10 +188,6 @@ p {
     text-align: center;
     padding-right: 10%;
     font-size: 10px;
-}
 
-form .btn {
-    background-color: rgb(255, 183, 0);
-    border-radius: 10px;
-    padding: 3px;
+
 }
