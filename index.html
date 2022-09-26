@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Quiet Storm</title>
+  </head>
+  <body>
+    <div id="bkg">
+      <video
+        src="https://user-images.githubusercontent.com/114012059/191759386-5599d077-315c-456e-a1f5-1441aa2b788a.mp4"
+        autoplay
+        muted
+        loop
+        poster=""
+        type="video/mp4"
+      ></video> </div>
+
+
+      <div class="content d-flex align-items-center">
+        <div class="container text-center">
+          <div class="content-box">
+            <div class="box">
+          <h1 class="icon">🌤
+              </h1>
+              <h4 id="degrees"></h4> &nbsp; &nbsp;
+                <span class="units"><a href="#" id="clink">°C </a>&nbsp;|
+                  <a href="#" id="flink"><b>°F</b></a></span>
+              <ul>
+              <div id="element"><b>SUNNY</b></div> <br>
+              <div id="humid">n</div>
+              </ul>
+              <br /><br />
+              <h2 class="location" id="city"></h2>
+              <h3 class="time"> Sunday 0:00</h3>
+              <br />
+              <form id="searchbox">
+                <input type="search" placeholder="Search city..." id="locate-city"/>
+                <input type ="submit" value="search" class="btn">
+              </form> 
+              <br><br><br>
+              <p> 🍃 Existence. 🕊 Consciousness. 🍃 Bliss.</p>
+            </div>
+          </div>
+          <div>
+           <small> <a
+              href="https://github.com/CrystalQuest112/Quiet-Storm"
+              target="_blank"
+              >Open-source code,</a
+            >
+            by Rachel.
+          </div>
+        
+  
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
