@@ -1,6 +1,5 @@
 body {
-    background: url("");
-    background-size: cover;
+    background: url("") 0% 0% / cover;
     max-width: 100%;
 }
 
@@ -10,8 +9,6 @@ body {
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
-
-
 }
 
 #bkg video {
@@ -28,9 +25,8 @@ body {
     position: relative;
     box-sizing: border-box;
     background-color: rgb(20, 20, 20);
-    color: #fff;
-    opacity: .6;
-    border: solidpx;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
     width: 800px;
     height: 650px;
     padding: 40px;
@@ -47,12 +43,11 @@ body {
     width: 100%;
     z-index: 20;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     padding: 10%;
     max-width: 100%;
 }
-
 
 .content-box h1 {
     color: rgb(175, 196, 172);
@@ -61,10 +56,7 @@ body {
     text-align: center;
     top: 23%;
     padding-left: 39%;
-
 }
-
-
 
 .content-box h2 {
     color: rgb(156, 83, 9);
@@ -75,8 +67,6 @@ body {
     text-align: center;
     padding-right: 10%;
     display: block;
-
-
 }
 
 .content-box h4 {
@@ -94,32 +84,21 @@ body {
     position: absolute;
     font-size: 16px;
     top: 47%;
-    padding: 0;
+    padding: 0px;
     margin-left: -13%;
     text-decoration: none;
-
-    color: rgb(255,
-            183,
-            0);
+    color: rgb(255, 183, 0);
     max-width: fit-content;
-
-
 }
 
 .content-box #clink {
-    color: rgb(255,
-            183,
-            0);
+    color: rgb(255, 183, 0);
     text-decoration: none;
-
 }
 
 .content-box #flink {
-    color: rgb(255,
-            183,
-            0);
+    color: rgb(255, 183, 0);
     text-decoration: none;
-
 }
 
 .content-box ul {
@@ -127,9 +106,7 @@ body {
     position: absolute;
     top: 48%;
     width: 100%;
-    color: rgb(255,
-            183,
-            0);
+    color: rgb(255, 183, 0);
     line-height: 15px;
     font-size: 20px;
     text-align: right;
@@ -153,8 +130,6 @@ form {
     text-align: center;
     padding-right: 10%;
     border-radius: 20px;
-
-
 }
 
 p {
@@ -164,8 +139,6 @@ p {
     text-align: center;
     padding-right: 10%;
     font-size: 10px;
-
-
 }
 
 form .btn {
