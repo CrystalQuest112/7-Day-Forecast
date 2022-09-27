@@ -14,6 +14,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Quiet Storm</title>
   </head>
+
+
   <body>
     <div id="bkg">
       <video
@@ -24,59 +26,68 @@
         poster=""
         type="video/mp4"
       ></video> </div>
-
-
       <div class="content d-flex align-items-center">
         <div class="container text-center">
-
       <div class="card text-white bg-dark mb-3" style="width: 70%;">
-  <div class="card-body"> 
-     <h2 class="location" id="city"></h2>
-    <h3 class="time"> Sunday 0:00</h3>
-     <h4 id="degrees"></h4> &nbsp; &nbsp;
-                <span class="units"><a href="#" id="clink">°C </a>|
-                  <a href="#" id="flink">°F</a></span>
-              
-                  <ul>
+      <div class="card-body">
+       <h2 class="location" id="city"></h2>
+      <h3 class="time"> Sunday 0:00</h3>
+      <h4 id="degrees"></h4> &nbsp; &nbsp;
+      <span class="units"><a href="#" id="clink">°C </a>|
+    <a href="#" id="flink">°F</a></span>
+               <ul>
               <span id="element"><b>SUNNY</b></span> <br>
               <span id="humid">humid</span>
-              </ul>  
+              </ul>
               <br /><br />
-            
               <br />
               <form id="searchbox">
                 <input type="search" placeholder="Search city..." id="locate-city"/>
                 <input type ="submit" value="search" class="btn">
-              </form> 
+              </form>
   </div>
    </div>
 <br>
     <div class="card text-white bg-dark mb-3" style="width: 70%;">
-  <div class="card-body"> 
-    
-              <br /><br />
-            
-              
-             
+  <div class="card-body"><div class="container">
+  <div class="row" id="row-1">
+    <span class="title"><b>7-DAY FORECAST</b></span>
+    <div class="col" id="day">TODAY</div>
+    <div class="col" id="hitemp">20°</div>
+    <div class="col" id ="icon">
+      <img src=" http://openweathermap.org/img/wn/03d@2x.png" width="30" id="icon"></div>
+    <div class="col" id="lowtemp">12°</div>
+  </div>
+  
+ <div class="row" id="row2">
+<div class="col" id="day">MON</div>
+    <div class="col" id="hitemp">20°</div>
+    <div class="col">
+      <img src=" http://openweathermap.org/img/wn/01d@2x.png" width="30" id="icon"></div>
+    <div class="col" id="lowtemp">12°</div>
+  </div>
+
+  </div> 
+
   </div>
    </div>
 
           <div class="content-boxx">
             <div class="boxx">
-         
-             
-              
+
+
+
               <br><br><br>
 
               <p> 🍃 Existence. 🕊 Consciousness. 🍃 Bliss.</p>
-              
+
             </div>
           </div>
           <div>
 
           </div></div>
 
-        
+
 
     <script src="app.js"></script>
   </body>

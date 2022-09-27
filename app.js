@@ -25,6 +25,7 @@ axios.get(weatherUrl).then(showTemperature);
 
 }
 
+
 // the pullCity function is catching the data of what was typed in the box. 
 // location is equal to the data typed in the box. the form box is selected using doc.query.
 // the data typed into the form box is declared as a 'value'. This value can be checked by logging it in the
@@ -43,8 +44,6 @@ let form = document.querySelector("#searchbox");
 form.addEventListener("submit", pullCity);
 
 
-
-
 callTime();
 function callTime() {
 let currentTime = new Date(); {
@@ -57,7 +56,7 @@ let hours =currentTime.getHours();
 let minutes = currentTime.getMinutes();
 
 let h3 = document.querySelector("h3");
-h3.innerHTML = `${date} 🌴 ${hours}:${minutes}`;
+h3.innerHTML = `${date} ⎟ ${hours}:${minutes}`;
 }}
 
 
@@ -81,6 +80,3 @@ farlink.addEventListener("click", showfTemp)
 
 let cellink = document.querySelector("#clink");
 cellink.addEventListener("click", showcTemp)
-
-
-
