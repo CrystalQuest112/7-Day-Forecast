@@ -16,6 +16,7 @@ function showTemperature(response) {
 
     celsiusTemp = response.data.main.temp;
 
+    dailyForecast(response.data.coord);
 }
 
 function search(city) {
@@ -39,7 +40,7 @@ function pullCity(event) {
 //...... 7 day forecast JS begins here. 
 //wrapped column in <div> id called "sevenday". Created and named a function below;
 // 
-function showSevenDay() { 
+function showSevenDay(response) {
     let sevenForecast = document.querySelector("#sevenday");
 
     let thePrediction = "";
@@ -60,16 +61,27 @@ weekDay.forEach(function(day){
     <div class="col" id="lowtemp">12°</div>`;
 
 });
+
+
      
-    sevenForecast.innerHTML = thePrediction;
+ sevenForecast.innerHTML = thePrediction;
+console.log(thePrediction);
+}
+
+function dailyForecast(coordinates) { 
+    console.log(coordinates);
+
+let apiKey = "73a00877081bd43422bdee0f3022beb5";
+let dailyUrl =`https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+
+console.log(dailyUrl);
 
 }
 
 
+
 search("Soufrière");
 showSevenDay();
-
-
 
 // this is selecting the form and button.
 let form = document.querySelector("#searchbox");
