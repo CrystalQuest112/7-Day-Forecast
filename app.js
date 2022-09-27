@@ -71,7 +71,7 @@ console.log(thePrediction);
 function dailyForecast(coordinates) { 
     console.log(coordinates);
 
-let apiKey = "73a00877081bd43422bdee0f3022beb5";
+let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
 let dailyUrl =`https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 
 console.log(dailyUrl);
