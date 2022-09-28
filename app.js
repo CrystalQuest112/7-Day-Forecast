@@ -40,30 +40,33 @@ function pullCity(event) {
 //...... 7 day forecast JS begins here. 
 //wrapped column in <div> id called "sevenday". Created and named a function below;
 // 
+
+function weekDay(timestamp){
+let date = new Date(timestamp * 1000);
+let day = date.getDay();
+let days = ["SUN" , "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+
+return days[day];
+
+}
+
 function showSevenDay(response) {
+    console.log(response.data.daily);
+    let forecastData = response.data.daily;
     let sevenForecast = document.querySelector("#sevenday");
+    let thePrediction = ""; 
 
-    let thePrediction = "";
+forecastData.forEach(function(forecastDay, index) { if(index < 7) {
+
     thePrediction = thePrediction + `<div class="row" id="row-1">
-    <div class="col" id="day">TODAY</div>
-    <div class="col" id="hitemp">20°</div>
+    <div class="col" id="day">${weekDay(forecastDay.dt)}</div>
+    <div class="col" id="hitemp">${Math.round(forecastDay.temp.max)}°</div>
     <div class="col" id ="icon">
-      <img src=" http://openweathermap.org/img/wn/03d@2x.png" width="30" id="icon"></div>
-    <div class="col" id="lowtemp">12°</div>`;
+      <img src=" http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="30" id="icon"></div>
+    <div class="col" id="lowtemp">${Math.round(forecastDay.temp.max)}°</div>`;
 
-     let weekDay = ["WED", "THU", "FRI", "SAT"];
-weekDay.forEach(function(day){  
-    thePrediction = thePrediction + `<div class="row" id="row-1">
-    <div class="col" id="day">${day}</div>
-    <div class="col" id="hitemp">20°</div>
-    <div class="col" id ="icon">
-      <img src=" http://openweathermap.org/img/wn/03d@2x.png" width="30" id="icon"></div>
-    <div class="col" id="lowtemp">12°</div>`;
+}});
 
-});
-
-
-     
  sevenForecast.innerHTML = thePrediction;
 console.log(thePrediction);
 }
@@ -75,13 +78,11 @@ let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
 let dailyUrl =`https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 
 console.log(dailyUrl);
-
+axios.get(dailyUrl).then(showSevenDay);
 }
 
 
-
 search("Soufrière");
-showSevenDay();
 
 // this is selecting the form and button.
 let form = document.querySelector("#searchbox");
