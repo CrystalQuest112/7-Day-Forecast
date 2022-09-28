@@ -32,10 +32,6 @@ body {
 
 }
 
-
-
-.card-body {}
-
 .content-box {
     display: block;
     position: relative;
@@ -97,7 +93,7 @@ body {
 
 .card h3 {
     position: absolute;
-    top: 12px;
+    top: 15px;
 
     font-size: 10px;
     margin-left: 75%;
@@ -117,24 +113,18 @@ body {
 }
 
 .card .units {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     color: rgb(255,
             0,
             183);
     position: absolute;
-    top: 20%;
-    left: 65%;
+    top: 25%;
+    left: 64%;
 
 }
 
 .card #clink {
-    color: rgb(255, 0, 183);
-    text-decoration: none;
-
-}
-
-.card #flink {
     color: rgb(255, 0, 183);
     text-decoration: none;
 
@@ -156,15 +146,13 @@ body {
 }
 
 
-
 form {
     position: absolute;
-    top: 10px;
+    top: 15px;
     width: 100%;
     text-align: left;
     padding-right: 10%;
     margin-left: -7%;
-    border-radius: 20px;
 
 
 }
@@ -212,5 +200,13 @@ p {
 }
 
 .row #day{ color: rgb(253, 215, 244);
+
+}
+
+.ghub{ color: rgb(253, 215, 244);
+    text-decoration: none;
+    position: absolute;
+    left:12%;
+
 
 }

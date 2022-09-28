@@ -54,18 +54,19 @@ function showSevenDay(response) {
     console.log(response.data.daily);
     let forecastData = response.data.daily;
     let sevenForecast = document.querySelector("#sevenday");
-    let thePrediction = ""; 
+    let thePrediction = `<div class="row">`; 
 
 forecastData.forEach(function(forecastDay, index) { if(index < 7) {
 
-    thePrediction = thePrediction + `<div class="row" id="row-1">
+      thePrediction = thePrediction + `<div class="col">
     <div class="col" id="day">${weekDay(forecastDay.dt)}</div>
     <div class="col" id="hitemp">${Math.round(forecastDay.temp.max)}°</div>
     <div class="col" id ="icon">
-      <img src=" http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="30" id="icon"></div>
-    <div class="col" id="lowtemp">${Math.round(forecastDay.temp.max)}°</div>`;
-
+      <img src=" http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="25" id="icon"></div>
+    <div class="col" id="lowtemp">${Math.round(forecastDay.temp.max)}°</div></div>`;
+    
 }});
+
 
  sevenForecast.innerHTML = thePrediction;
 console.log(thePrediction);
@@ -104,24 +105,3 @@ let h3 = document.querySelector("h3");
 h3.innerHTML = `${date} ⎟ ${hours}:${minutes}`;
 }}
 
-
-function showfTemp (event) {
-    event.preventDefault();
-    let fTemp = (celsiusTemp * 9)/5 + 32;
-let degrees = document.querySelector("#degrees");
-degrees.innerHTML= Math.round(fTemp);
-
-}
-
-function showcTemp(event) {
-    event.preventDefault();
-    let degrees = document.querySelector("#degrees");
-    degrees.innerHTML= Math.round(celsiusTemp);}
-
-let celsiusTemp = null;
-
-let farlink = document.querySelector("#flink");
-farlink.addEventListener("click", showfTemp)
-
-let cellink = document.querySelector("#clink");
-cellink.addEventListener("click", showcTemp)
